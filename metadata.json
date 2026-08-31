@@ -1,0 +1,6 @@
+{
+  "name": "Corot Healthcare Hospicare",
+  "description": "Enterprise Multi-Hospital Cloud Hospital Management ERP with Tenant Isolation, Multi-Role Access Control, and Comprehensive Clinical & Administrative Workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
