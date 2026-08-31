@@ -729,12 +729,12 @@ ON CONFLICT DO NOTHING;
 
 INSERT INTO public.medicines (id, hospital_id, code, name, category, dosage_form, unit_price, mrp)
 VALUES
-  ('m1111111-1111-1111-1111-111111111111', '11111111-1111-1111-1111-111111111111', 'MED-AUG-625', 'Augmentin 625mg', 'Antibiotic', 'Tablet', 18.50, 22.00),
-  ('m2222222-2222-2222-2222-222222222222', '22222222-2222-2222-2222-222222222222', 'MED-MET-500', 'Metformin 500mg SR', 'Antidiabetic', 'Tablet', 6.00, 8.50)
+  ('c1111111-1111-1111-1111-111111111111', '11111111-1111-1111-1111-111111111111', 'MED-AUG-625', 'Augmentin 625mg', 'Antibiotic', 'Tablet', 18.50, 22.00),
+  ('c2222222-2222-2222-2222-222222222222', '22222222-2222-2222-2222-222222222222', 'MED-MET-500', 'Metformin 500mg SR', 'Antidiabetic', 'Tablet', 6.00, 8.50)
 ON CONFLICT DO NOTHING;
 
 INSERT INTO public.invoices (id, hospital_id, invoice_number, patient_id, subtotal, discount, grand_total, paid_amount, balance_due, status)
 VALUES
-  ('i1111111-1111-1111-1111-111111111111', '11111111-1111-1111-1111-111111111111', 'INV-2026-001001', 'a1111111-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 1500.00, 0.00, 1500.00, 1500.00, 0.00, 'paid'),
-  ('i2222222-2222-2222-2222-222222222222', '22222222-2222-2222-2222-222222222222', 'INV-2026-002001', 'b2222222-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 2400.00, 200.00, 2200.00, 1000.00, 1200.00, 'partially_paid')
+  ('d1111111-1111-1111-1111-111111111111', '11111111-1111-1111-1111-111111111111', 'INV-2026-001001', 'a1111111-aaaa-aaaa-aaaa-aaaaaaaaaaaa', 1500.00, 0.00, 1500.00, 1500.00, 0.00, 'paid'),
+  ('d2222222-2222-2222-2222-222222222222', '22222222-2222-2222-2222-222222222222', 'INV-2026-002001', 'b2222222-bbbb-bbbb-bbbb-bbbbbbbbbbbb', 2400.00, 200.00, 2200.00, 1000.00, 1200.00, 'partially_paid')
 ON CONFLICT DO NOTHING;
